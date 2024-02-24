@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+    <h1> <%= rday %></h1>
+
+    <ul>
+       <% for(var i = 0;i<newListItems.length;i++){ %>
+            <li><%=newListItems[i]%></li>
+      <%  } %>
+    </ul>
+
+    <form action="/" class="" method="post">
+        <input type="text" class="" name="newItem">
+        <button type="submit" name="button">Add</button>
+    </form>
+</body>
+</html>
